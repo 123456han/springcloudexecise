@@ -1,0 +1,20 @@
+spring:
+    application:
+        name: config-server
+    # git管理配置
+    cloud:
+        config:
+            server:
+                git:
+                    uri: https://github.com/123456han/springcloudconfig/
+                    searchPaths: /blob/master/
+                    usename: hanjiliang123@126.com
+                    password: woai20031023
+server:
+  port: 8895
+eureka:
+    client:
+        service-url:
+            defaultZone: http://localhost:8763/eureka
+
+

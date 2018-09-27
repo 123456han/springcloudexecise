@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: api-gateway
+server:
+  port: 8897
+eureka:
+    client:
+        service-url:
+            defaultZone: http://localhost:8763/eureka
+zuul:
+  routes:
+    api-a-url:
+      path: /api-a-url/**
+      serviceId: providerservera
+      #url: http://localhost:8891/
+    api-b-url:
+      path: /api-b-url/**
+      serviceId: providerservera
+      #url: http://localhost:8892/

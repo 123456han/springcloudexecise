@@ -1,0 +1,11 @@
+#spring:
+#    application:
+#        name: configserver
+#    cloud:
+#        config:
+#            profile: dev
+#            label: dev1.0
+#            uri: http://localhost:8895/
+#
+#server:
+#    port: 8896
